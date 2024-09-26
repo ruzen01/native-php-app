@@ -1,15 +1,13 @@
 {
-    "name": "zen01/native-php-app",
-    "description": "Native PHP app",
-    "license": "MIT",
+    "name": "native-php-app",
     "autoload": {
         "psr-4": {
-            "Zen01\\NativePhpApp\\": "src/"
+            "NativePhpApp\\": "src/"
         }
     },
     "authors": [
         {
-            "name": "ruzen01",
+            "name": "ruzen 01",
             "email": "kim.vadim.alexandrovich@gmail.com"
         }
     ],
