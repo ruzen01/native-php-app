@@ -18,13 +18,13 @@
             padding: 20px;
         }
         header {
-            background-color: #5F9EA0;
+            background-color: #696969;
             color: white;
             padding: 10px;
             text-align: center;
         }
         footer {
-            background-color: #f4f4f4;
+            background-color: #696969;
             padding: 10px;
             text-align: center;
         }
