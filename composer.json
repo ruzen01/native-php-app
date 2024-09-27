@@ -1,5 +1,5 @@
 {
-    "name": "native-php-app",
+    "name": "vendor/native-php-app",
     "autoload": {
         "psr-4": {
             "NativePhpApp\\": "src/"

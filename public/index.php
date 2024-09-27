@@ -14,7 +14,7 @@ function routeRequest($routes, $pdo)
         return $controllerInstance->$method();
     } else {
         http_response_code(404);
-        echo "404 Not Found";
+        echo "404 Not Found Страница не найдена";
     }
 }
 

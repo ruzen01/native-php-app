@@ -4,7 +4,6 @@ class UsersController
 {
     private $pdo;
 
-    // Конструктор принимает объект PDO
     public function __construct($pdo)
     {
         $this->pdo = $pdo;
@@ -16,9 +15,14 @@ class UsersController
         $stmt = $this->pdo->query("SELECT * FROM users");
         $users = $stmt->fetchAll();
 
-        // Выводим пользователей (или передаем в представление)
-        foreach ($users as $user) {
-            echo $user['first_name'] . " " . $user['last_name'] . "<br>";
-        }
+        // Подключаем вьюшку и передаем в нее данные
+        $this->render('users', ['users' => $users]);
+    }
+
+    // Функция для подключения вьюшек
+    private function render($view, $data = [])
+    {
+        extract($data); // Извлекаем переменные из массива данных
+        require_once __DIR__ . "/../Views/$view.php"; // Подключаем файл вьюшки
     }
 }

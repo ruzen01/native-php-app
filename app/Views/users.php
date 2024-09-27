@@ -1,13 +1,17 @@
 <?php
 // Устанавливаем заголовок страницы
-$title = "Home";
+$title = "Users";
 
 // Начинаем буферизацию вывода для основного контента страницы
 ob_start();
 ?>
 
-<h1>Welcome to the Home Page</h1>
-<p>This is the home page content. You can navigate using the links on the left.</p>
+<h1>User List</h1>
+<ul>
+    <?php foreach ($users as $user): ?>
+        <li><?= htmlspecialchars($user['first_name']) . ' ' . htmlspecialchars($user['last_name']) . ' ' . htmlspecialchars($user['birthdate']) . ' ' . htmlspecialchars($user['city']); ?></li>
+    <?php endforeach; ?>
+</ul>
 
 <?php
 // Получаем содержимое буфера и очищаем его
