@@ -6,7 +6,7 @@
     <title><?= $title ?? 'My App'; ?></title>
     <style>
         body {
-            font-family: Papyrus, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
