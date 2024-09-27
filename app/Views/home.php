@@ -2,6 +2,6 @@
 <html>
     <head></head>
     <body>
-        Welcome
+        Welcome to native PHP app!
     </body>
 </html>
