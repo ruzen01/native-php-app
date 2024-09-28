@@ -33,3 +33,6 @@ seed-db:
 # Команда для полного выполнения всех шагов
 setup: install setup-db seed-db
 	@echo "Project setup complete!"
+
+test:
+	php tests/TestRoutes.php

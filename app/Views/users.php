@@ -7,11 +7,26 @@ ob_start();
 ?>
 
 <h1>User List</h1>
-<ul>
-    <?php foreach ($users as $user): ?>
-        <li><?= htmlspecialchars($user['first_name']) . ' ' . htmlspecialchars($user['last_name']) . ' ' . htmlspecialchars($user['birthdate']) . ' ' . htmlspecialchars($user['city']); ?></li>
-    <?php endforeach; ?>
-</ul>
+<table border="1" cellpadding="10" cellspacing="0">
+    <thead>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Birthdate</th>
+            <th>City</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($users as $user): ?>
+            <tr>
+                <td><?= htmlspecialchars($user['first_name']); ?></td>
+                <td><?= htmlspecialchars($user['last_name']); ?></td>
+                <td><?= htmlspecialchars($user['birthdate']); ?></td>
+                <td><?= htmlspecialchars($user['city']); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
 
 <?php
 // Получаем содержимое буфера и очищаем его
