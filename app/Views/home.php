@@ -7,7 +7,7 @@ ob_start();
 ?>
 
 <h1>Welcome to the Home Page</h1>
-<p>This is the home page content. You can navigate using the links on the left.</p>
+<p>This web application is written in native PHP without any libraries or frameworks. The goal of the project is to study the basics of PHP and understand the reasons behind the development of various libraries and frameworks.</p>
 
 <?php
 // Получаем содержимое буфера и очищаем его

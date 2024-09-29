@@ -33,7 +33,7 @@
 <body>
 
 <header>
-    <h1>My Application</h1>
+    <h1>Native PHP Application</h1>
 </header>
 
 <div class="container">
